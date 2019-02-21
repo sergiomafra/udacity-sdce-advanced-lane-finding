@@ -22,6 +22,19 @@ IMAGES = glob.glob('{}/calibration*.jpg'.format(IMAGES_DIR))
 NX = 9
 NY = 6
 
+SRC_POINTS = np.float32([
+    [570,460],
+    [710,460],
+    [130,720],
+    [1150,720]
+])
+DST_POINTS = np.float32([
+    [0,0],
+    [1280,0],
+    [0,720],
+    [1280,720]
+])
+
 ## DEFINITIONS
 def calibrateCamera(images):
     objpoints = []
@@ -119,6 +132,10 @@ def hlsChannelToBinary(image, channel, threshold=(75,240)):
     hlsbinary[(sat > threshold[0]) & (sat <= threshold[1])] = 1
 
     return hlsbinary
+
+def genPerspectiveMatrix(src_points, dst_points):
+
+    return cv2.getPerspectiveTransform(src_points, dst_points)
 
 def applyThreshold(image):
     pass
