@@ -1,8 +1,4 @@
-examples
-project_video.mp4
-test_images
+media/examples
+media/test_images
 .ipynb_checkpoints
 Advanced Lane Finding.ipynb
-output_images
-straight_birdview.jpg
-combined.jpg
