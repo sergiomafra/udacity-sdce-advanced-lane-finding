@@ -2,3 +2,5 @@ media/examples
 media/test_images
 .ipynb_checkpoints
 Advanced Lane Finding.ipynb
+*__pycache__*
+*.swp
