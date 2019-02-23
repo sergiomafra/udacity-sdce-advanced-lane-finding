@@ -263,11 +263,11 @@ class Pipe:
                 undistorted,
                 'mag',
                 self.pipe_consts['THRESHOLD']['MAG'])
-        # dir_bin = self.applyThreshold(
-        #         undistorted,
-        #         'dir',
-        #         self.pipe_consts['THRESHOLD']['DIR'],
-        #         kernel = 9)
+        dir_bin = self.applyThreshold(
+                undistorted,
+                'dir',
+                self.pipe_consts['THRESHOLD']['DIR'],
+                ksize = 9)
         # hls_ch = self.applyThreshold(
         #         undistorted,
         #         'hls',
