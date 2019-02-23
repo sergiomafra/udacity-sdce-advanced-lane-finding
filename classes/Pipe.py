@@ -291,8 +291,19 @@ class Pipe:
         # mpimg.imsave('hls_cs.jpg', hls_cs, cmap='gray')
 
         ## Combination formula
+        ## Between With and Without dir_bin, leave JUST ONE UNCOMMENTED
         combined = np.zeros_like(undistorted[:,:,0])
-        combined[(gradx == 1)|(grady == 1)|(mag_bin == 1)|(hls_cs == 1)] = 1
+
+        ## Without dir_bin
+        combined[
+            ((gradx == 1) & ((grady == 1) | (mag_bin == 1))) | (hls_cs == 1)
+        ] = 1
+
+        ## With dir_bin
+        # combined[
+        #     (((gradx == 1) & ((grady == 1) | (mag_bin == 1))) | (hls_cs == 1)) &
+        #     (dir_bin == 1)
+        # ]
 
         ## Uncomment to save combined locally
         # mpimg.imsave('combined.jpg', combined, cmap='gray')
