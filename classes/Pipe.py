@@ -2,7 +2,7 @@
 ## Period: Term 1
 ## Class: December 2018
 ## Project: Advanced Lane Finding
-## Autor: Sérgio Mafra
+## Author: Sérgio Mafra
 ## Email: sergio@mafra.io
 ## GitHub: github.com/sergiomafra/udacity-sdce-advanced-lane-finding
 
@@ -12,6 +12,7 @@ import matplotlib.image as mpimg
 import numpy as np
 # from moviepy.editor import VideoFileClip
 # from IPython.display import HTML
+
 
 class Pipe:
 
@@ -149,20 +150,20 @@ class Pipe:
             win_xright_high = rightx_current + margin
 
             # Draw the windows on the visualization image
-            cv2.rectangle(
-                out_img,
-                (win_xleft_low,win_y_low),
-                (win_xleft_high,win_y_high),
-                (0,255,0),
-                2
-            )
-            cv2.rectangle(
-                out_img,
-                (win_xright_low,win_y_low),
-                (win_xright_high,win_y_high),
-                (0,255,0),
-                2
-            )
+            # cv2.rectangle(
+            #     out_img,
+            #     (win_xleft_low,win_y_low),
+            #     (win_xleft_high,win_y_high),
+            #     (0,255,0),
+            #     2
+            # )
+            # cv2.rectangle(
+            #     out_img,
+            #     (win_xright_low,win_y_low),
+            #     (win_xright_high,win_y_high),
+            #     (0,255,0),
+            #     2
+            # )
 
             # Identify the nonzero pixels in x and y within the window #
             good_left_inds = (

@@ -2,7 +2,7 @@
 ## Period: Term 1
 ## Class: December 2018
 ## Project: Advanced Lane Finding
-## Autor: Sérgio Mafra
+## Author: Sérgio Mafra
 ## Email: sergio@mafra.io
 ## GitHub: github.com/sergiomafra/udacity-sdce-advanced-lane-finding
 

@@ -4,3 +4,4 @@ media/test_images
 Advanced Lane Finding.ipynb
 *__pycache__*
 *.swp
+*.pyc
