@@ -99,7 +99,7 @@ class Pipe:
         elif filter_type == 'mag':
             return self._magThresh(image, threshold)
         elif filter_type == 'dir':
-            return self._dirThresh(image, kernel, threshold)
+            return self._dirThresh(image, ksize, threshold)
         elif filter_type == 'hls':
             return self._hlsChannel(image, channel, threshold)
 
